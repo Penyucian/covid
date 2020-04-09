@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid-19</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/css/index.css" />
+</head>
+
+<body id="l">
+  <div class="container">
+    <header>
+      <nav class="nav d-f jc-c">
+        <img src="./asset/img/Jogja.svg" alt="logo" class="">
+      </nav>
+    </header>
+    <main class="d-f jc-c">
+      <div class="m-w d-f fd-c">
+        <div class="d-f fd-c jc-c">
+          <h1 class="judul t-c mt-3 mb-0">YOGYAKARTA TANGGAP COVID-19</h1>
+          <p class="t-c mt-1 mb-0">Jangan panik! Mari bersama lawan COVID-19. Hubungi layanan Yogyakarta Tanggap
+            COVID-19.</p>
+          <div class="d-f jc-c">
+            <div class="informasi my-3">
+              <button class="tbl tbl-1 m-2" href>0274555585</button>
+              <button class="tbl tbl-1 m-2">08112764800</button>
+              <button class="tbl tbl-1 m-2">Lapor Jogjaprov</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-f jc-c">
+          <div class="informasi">
+            <div class="kartu">
+              <div class="d-f">
+                <div class="d-f ac-s">
+                  <img src="./asset/img/ODP.svg" alt="ODP">
+                </div>
+                <div class="d-f">
+                  <div class="ml-2 mt-1">
+                    <div class="j-s">ODP</div>
+                    <p class="a-s mt-2 mb-0" id="odpP"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kartu">
+              <div class="d-f">
+                <div class="d-f ac-s">
+                  <img src="./asset/img/PDP.svg" alt="PDP">
+                </div>
+                <div class="ml-2 mt-1">
+                  <div class="j-s">PDP</div>
+                  <p class="a-s mt-2 mb-0" id="pdpP"></p>
+                </div>
+              </div>
+            </div>
+            <div class="kartu">
+              <div class="d-f">
+                <div class="d-f ac-s">
+                  <img src="./asset/img/+.svg" alt="Positif">
+                </div>
+                <div class="ml-2 mt-1">
+                  <div class="j-s">Positif</div>
+                  <p class="a-s mt-2 mb-0" id="positifP"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-f jc-c mt-4">
+          <div class="panel-informasi">
+            <div class="d-f fw-w r">
+              <div class="d-f g-c  m-1">
+                <img class="as-s" src="./asset/img/Virus.svg" alt="">
+                <div class="ml-2">
+                  <div class="t-5">Tentang COVID-19</div>
+                  <p>Ringkasan mengenai virus dan gejala.
+                    <span onclick="boModal1()" class="t-m">
+                      <button class="tbl-informasi">selebihnya...</button>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-f g-c m-1">
+                <img class="as-s" src="./asset/img/bisa.svg" alt="">
+                <div class="ml-2">
+                  <div class="t-5">Apa yang bisa dilakukan</div>
+                  <p>Informasi tentang physical distancing, isolasi diri, dan lainnya.
+                    <span onclick="boModal2()" class="t-m">
+                      <button class="tbl-informasi">selebihnya...</button>
+                    </span>
+                </div>
+              </div>
+              <div class="d-f g-c m-1">
+                <img class="as-s" src="./asset/img/test.svg" alt="">
+                <div class="ml-2">
+                  <div class="t-5">Test COVID-19</div>
+                  <p>Panduan terkait siapa yang harus diuji dan apa yang diharapkan dari hasil.
+                    <span onclick="boModal3()" class="t-m">
+                      <button class="tbl-informasi">selebihnya...</button>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <span class="border-space mt-4"></span>
+            <p class="t-c my-4">sumber data : 
+              <a href="https://corona.jogjaprov.go.id" target="__blank">corona.jogjaprov.go.id</a>
+            </p>
+            <span class="border-space"></span>
+          </div>
+          <aside class="p-2 aside d-f fd-c" id="bAside">
+            <div class="d-f jc-e">
+              <div onclick="tAside()" class="cls">
+                <div class="wr-tbl">
+                  <img class="y" src="./asset/img/i-plusb.svg" alt="close">
+                </div>
+              </div>
+            </div>
+            <div class="i-d mt-4" id="i-d-p">
+              <div class="p-2 d-f fd-c jc-c">
+                <div class="t-c t-b mb-1">tambah data pasien</div>
+                <input class="i-b" type="number" placeholder="pasien odp" name="tOdp" id="i-odp" value="">
+                <input class="i-b" type="number" placeholder="pasien pdp" name="tPdp" id="i-pdp" value="">
+                <input class="i-b" type="number" placeholder="pasien positif" name="tPositif" id="i-positif" value="">
+                <button class="tbl tbl-1 my-3" type="submit" onclick="updateD()">submit</button>
+              </div>
+            </div>
+            <div class="i-t mt-4">
+              <div class="d-f">
+                <div>
+                  <img src="./asset/img/icon.svg" alt="">
+                </div>
+                <div class="d-f fd-c ml-2">
+                  <div class="">Chandra Adam Pratama</div>
+                  <div class="">@penyucian</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="py-4 d-f jc-c fw-w">
+        Sumber belajar : 
+        <a href="https://dicoding.com" target="__blank" class="ml-1">dicoding.com</a> ; 
+        <a href="https://www.w3schools.com/" target="__blank" class="ml-1">w3schools.com</a> ; 
+        <a href="https://developer.mozilla.com" target="__blank" class="ml-1">developer.mozilla.com</a>.
+      </div>
+    </footer>
+  </div>
+  <div class="bmodal" id="bModal1">
+    <div class="container">
+      <div class="d-f jc-c">
+        <div class="m-w2 modal my-5 p-4">
+          <div class="d-f ">
+            <div onclick="clModal1()" class="cls">
+              <div class="wr-tbl">
+                <img class="y" src="./asset/img/i-plusb.svg" alt="close">
+              </div>
+            </div>
+          </div>
+          <h2>Tentang COVID-19</h2>
+          <p>Ringkasan mengenai virus dan gejala.</p>
+          <div class="d-f mt-2 ">
+            <img src="./asset/img/virus.svg" alt="close">
+            <h3 class="ml-2">What is COVID-19?</h3>
+          </div>
+          <p>COVID-19 adalah penyebaran penyakit pernapasan baru
+            di seluruh dunia dan itu disebabkan oleh coronavirus.
+            COVID-19 adalah kependekan dari “coronavirus disease 2019.”
+          <ul>
+            <li>Virus ini diduga menyebar terutama dalam kerumunan
+                  dan berdekatan satu sama lain kurang dari 1,5 meter
+                  dan melalui tetesan pernapasan yang dihasilkan 
+                  ketika orang yang terinfeksi batuk atau bersin.</li>
+            <li>Orang yang paling memungkinkan menularkan yaitu
+                  orang sakit, namun mereka yang tidak memiliki
+                  gejala masih bisa menularkan virus ke orang lain.</li>
+            <li>Saat ini masih belum ada vaksin atau obat untuk
+                  COVID-19 namun peniliti masih berusuha untuk 
+                  menemukannya</li>
+          </ul>
+          <div class="d-f mt-2">
+            <img src="./asset/img/gejala.xml" alt="close">
+            <h3 class="ml-2">Apa saja gejala COVID-19?</h3>
+          </div>
+          <p>Gejala yang paling umum sangat mirip dengan virus lain
+                virus: demam, batuk, dan kesulitan bernapas.</p>
+          <ul>
+            <li>Gejala umum COVID-19 bertambah seiring waktu. 
+                  Untuk yang informasi yang terbaru daftar 
+                  gejala, kunjungi situs web CDC.</li>
+            <li>Gejala mungkin muncul 2 sampai 14hari setelah
+                  terpapar virus ini dan tergantung ada atau 
+                  tidaknya penyakit bawaan.</li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">Siapa yang beresiko dengan COVID-19?</h3>
+            </div>
+            <p>Semua orang beresiko tertular COVID-19, namun beberapa
+                  ada dalam resiko besar apabila ada penyakit serius.</p>
+            <ul>
+              <li>Secara umum, orang dewasa berusia 65 dan lebih tua dan orang-orang 
+                      dari segala usia yang memiliki penyakit jantung, penyakit paru - paru, dan 
+                      diabetes dengan komplikasi (seperti, tetapi tidak terbatas 
+                      untuk, penyakit ginjal, penyakit jantung, dan neuropati) mungkin 
+                      berada pada risiko yang lebih tinggi untuk penyakit serius dari COVID-19.</li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">Kapan saya harus menemui dokter?</h3>
+            </div>
+            <p>Mengetahui kapan harus pergi ke dokter dapat menjaga 
+                  ketersediaan medis tersedia untuk mereka yang 
+                  paling membutuhkannya.</p>
+            <ul>
+              <li>Sebagian besar gejala ringan dapat diobati di rumah.</li>
+              <li>Jika Anda memiliki gejala ringan, hubungi dokter Anda sebelumnya 
+                      pergi ke kantor mereka. Banyak kantor dokter 
+                      melakukan kunjungan virtual. Mereka akan memberi 
+                      tahu Anda apa yang harus dilakukan 
+                      berdasarkan lokasi Anda.</li>
+              <li>Pengujian terbatas ketersediaan di seluruh negeri 
+                      dan saat ini sedang diprioritaskan untuk perawatan kesehatan 
+                      pekerja, penyedia layanan medis darurat, polisi, 
+                      dan pekerja penting lainnya, jadi silakan berkonsultasi dengan Anda 
+                      dokter untuk ketersediaan di daerah Anda.</li>
+              <li>Jika Anda mengembangkan rambu peringatan darurat, hubungi 119 ext 9. 
+                      Tanda-tanda peringatan darurat utama meliputi: dada persisten 
+                      rasa sakit atau tekanan; kesulitan bernapas ekstrim; parah, 
+                      pusing konstan atau pusing; dan kesulitan bangun.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bmodal" id="bModal2">
+    <div class="container">
+      <div class="d-f jc-c">
+        <div class="m-w2 modal my-5 p-4">
+          <div class="d-f ">
+            <div onclick="clModal2()" class="cls">
+              <div class="wr-tbl">
+                <img class="y" src="./asset/img/i-plusb.svg" alt="close">
+              </div>
+            </div>
+          </div>
+          <h2>Apa yang bisa dilakukan</h2>
+          <p>Informasi tentang physical distancing, isolasi diri, dan lainnya.</p>
+          <div class="d-f mt-2">
+            <img src="./asset/img/icon.svg" alt="close">
+            <h3 class="ml-2">Cuci tangan</h3>
+          </div>
+          <p>Cuci tangan adalah langkah terbaik untuk menjaga anda 
+                tetap sehat. Berikut langkah-langkahnya:
+            <ul>
+              <li>Basahi tanganmu dengan air bersih yang mengalir. 
+                      Matikan keran dan oleskan sabun.</li>
+              <li>Bersihkan tangan anda dengan menggosok bagian 
+                      punggung tangan, sela sela jari, dan dibawah
+                      kuku.</li>
+              <li>Gosok tanganmu selama 20 detik. Nyanyikan 
+                "Gundul gundul pacul" saat membersihkan tangan untuk mengukur waktu</li>
+              <li>Bilas tanganmu sampai bersih dengan air mengalir dan keringkan.</li>
+              <li>Tidak ada sabun atau air? gunakan hand sanitizer yang mengandung
+                    setidaknya 60 persen alkohol. Oleskan ke telapak tangan. 
+                    gosok tanganmu secara bersamaan hingga tanganmu kering.
+              </li>
+              <li>Hindari menyentuh muka dan mata.</li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">Physical Distancing</h3>
+            </div>
+            <p>The main way COVID-19 spreads is between people. Social distancing helps to stop the spread.</p>
+            <ul>
+              <li>Hindari kontak fisik dengan orang lain.</li>
+              <li>Tetap jaga jarak sekitar 1,5 meter dari orang-orang saat diluar rumah</li>
+              <li>Jangan mengundang tamu ke rumah.</li>
+              <li>Hindari kerumunan.</li>
+              <li>Tetap dirumah jika anda sakit.</li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">Isolasi diri dari orang lain </h3>
+            </div>
+            <p>If you have confirmed or possible COVID-19 or have symptoms, isolate yourself in your home to protect
+              others.</p>
+            <ul>
+              <li>Tetap dirumah. Amati gejalamu dan apabila kian memburuk, segera kontak dokter.</li>
+              <li>Do your best to stay away from your other household members, including pets. Designate a room for your
+                use
+                only. Ideally use your own bathroom, too.</li>
+              <li>Wash your hands frequently. If you cough or sneeze, cover your mouth and nose with a tissue. Discard
+                the
+                tissue and immediately wash your hands. Avoid sharing personal items such as dishes, towels, and bedding
+                with other people in your house. Clean and disinfect frequently used surfaces often. Wash laundry
+                frequently.</li>
+              <li>Have a household member or friend run errands for you like picking up groceries or prescriptions.</li>
+              <li>Wear a mask if you have to be around other people. If you can’t find a mask, create one from a garment
+                like
+                a scarf. If you can’t wear a mask because of difficulty breathing, make sure caregivers wear one around
+                you.</li>
+              <li>You can leave your house to receive medical care, but don’t take the bus, subway, or taxi.</li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">Symptom Monitoring</h3>
+            </div>
+            <p>Observe your COVID-19 symptoms for 14 days if you suspect you have the disease, have been around someone
+              who
+              has tested positive for it, or you’ve been diagnosed.</p>
+            <ul>
+              <li>First, seek emergency care right away if you develop emergency warning signs, which include:
+                persistent
+                chest pain or pressure; extreme difficulty breathing; severe, constant dizziness or lightheadedness;
+                slurred
+                speech; and difficulty waking up.</li>
+              <li>Have your medical provider’s contact information on hand.</li>
+              <li>Keep a log of your symptoms, including your temperature.</li>
+              <li>If your symptoms worsen, call your doctor immediately to update them and they will tell you what to do
+                next.
+                Complete our Screening Tool to help you determine next steps based on your symptoms and risk factors.
+              </li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">Cleaning and Disinfecting Surfaces</h3>
+            </div>
+            <p>Commonly used surfaces should be regularly cleaned and disinfected.</p>
+            <ul>
+              <li>It’s always a good idea to routinely clean and disinfect frequently touched surfaces like tables,
+                doorknobs,
+                light switches, handles, desks, toilets, faucets, and sinks. But if you have a suspected or confirmed
+                case
+                of COVID-19, be vigilant about doing this daily.</li>
+              <li>First, clean dirty surfaces with soap and water. Cleaning will remove dirt and lower the number of
+                germs—but
+                it will not kill germs.</li>
+              <li>Next, disinfect surfaces to kill germs. Disinfecting after cleaning can further lower the risk of
+                spreading
+                an infection. Most common EPA-registered household disinfectants will work. Or dilute your household
+                bleach
+                with 1/3 cup of bleach per gallon of water.</li>
+              <li>Wear dedicated gloves for COVID-19 related cleaning and disinfecting or use disposable gloves and
+                discard
+                them after each use.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bmodal" id="bModal3">
+    <div class="container">
+      <div class="d-f jc-c py-5">
+        <div class="m-w2 modal p-4">
+          <div class="d-f ">
+            <div onclick="clModal3()" class="cls">
+              <div class="wr-tbl">
+                <img class="y" src="./asset/img/i-plusb.svg" alt="close">
+              </div>
+            </div>
+          </div>
+          <h2>COVID-19 Testing</h2>
+          <p>Current guidance on who should be
+            tested and what to expect from test results.</p>
+          <div class="d-f mt-2">
+            <img src="./asset/img/icon.svg" alt="close">
+            <h3 class="ml-2">Who should be tested?</h3>
+          </div>
+
+          <p>Not everyone needs to be tested for COVID-19.
+            <ul>
+              <li>Most mild symptoms can be treated at home.</li>
+              <li>If you think you have symptoms, the most up-to-date way to assess your best next steps is to complete
+                our
+                Screening Tool.</li>
+            </ul>
+
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">How do I get tested?</h3>
+            </div>
+
+            <p>Your doctor or state or local health department will decide if you should be tested.</p>
+            <ul>
+              <li>State and local health departments have received tests from the CDC. Individual doctors are
+                coordinating
+                testing through public health labs. They are also getting tests developed by commercial manufacturers.
+              </li>
+              <li>Different providers, states, and local health departments may have different testing recommendations.
+              </li>
+              <li>Testing is limited-availability across the country and is currently being prioritized for healthcare
+                workers, emergency medical service providers, police, and other essential workers.</li>
+              <li>If you or someone you know has COVID-19 symptoms and needs to get tested, call your doctor. They will
+                tell
+                you what to do next.</li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">What can I expect from test results?</h3>
+            </div>
+            <p>Testing can identify if you have the virus that causes COVID-19.</p>
+            <ul>
+              <li>No treatment is specifically approved for COVID-19. But test results can help you and your doctor
+                decide
+                what to do next.</li>
+              <li>If you test positive and have mild symptoms, your doctor may advise you to care for yourself at home.
+              </li>
+              <li>If you test positive and have severe symptoms, your doctor will tell you what to do.</li>
+              <li>A negative test means you were probably not infected at the time of testing. However, it is possible
+                that
+                you were tested early into your infection and that you could test positive later. You could also be
+                exposed
+                at any time and develop the illness.</li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/icon.svg" alt="close">
+              <h3 class="ml-2">What can I do while waiting for results?</h3>
+            </div>
+            <p>The turnaround time for testing varies between testing sites.</p>
+            <ul>
+              <li>While waiting for test results, seek emergency care right away if you develop emergency warning signs,
+                which
+                include: persistent chest pain or pressure; extreme difficulty breathing; severe, constant dizziness or
+                lightheadedness; slurred speech; and difficulty waking up.</li>
+              <li>Have your medical provider’s contact information on hand.</li>
+              <li>If your symptoms worsen, call your doctor and tell them your symptoms. They will tell you what to do
+                next.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fab" onclick="bAside()" id="tFab">
+    <img class="x" src="./asset/img/i-plusb.svg" alt="i-plus">
+  </div>
+  <script rel="stylesheet/javascript" src="./asset/js/index.js"></script>
+</body>
+
+</html>
