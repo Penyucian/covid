@@ -88,6 +88,39 @@ function tAside() {
   b.style.right = "1rem";
 }
 
+function kmodal(e){
+  let b = document.getElementsByTagName("BODY");
+  let c = document.getElementsByClassName("bmodal");
+  let bm1 = document.getElementById("bModal1");
+  let bom1 = document.getElementById("boModal1");
+  let bm2 = document.getElementById("bModal2");
+  let bom2 = document.getElementById("boModal2");
+  let bm3 = document.getElementById("bModal3");
+  let bom3 = document.getElementById("boModal3");
+
+  if (bom3.id == e.id){
+    bm3.style.display = "block";
+    bm3.style.top = "0vh"
+    b[0].style.overflowY = "hidden"
+  } else if (bom2.id == e.id){
+    bm2.style.display = "block";
+    bm2.style.top = "0vh"
+    b[0].style.overflowY = "hidden"
+  } else if(bom1.id == e.id){
+    bm1.style.display = "block";
+    bm1.style.top = "0vh"
+    b[0].style.overflowY = "hidden"
+  }  else{
+    b[0].style.overflowY = "scroll"
+    for(var o = 0 ; o < c.length; o++){
+      if(c[o].style.display = "none"){
+        c[o].style.display = "none";
+        c[o].style.top = "120vh"
+      }
+    }
+  }
+}
+/*
 function boModal1(){
   let a = document.getElementById("bModal1");
   let b = document.getElementsByTagName("BODY");
@@ -130,4 +163,4 @@ function clModal3(){
   a.style.display = "none";
   a.style.top = "120vh"
   b[0].style.overflowY = "scroll"
-}
+}*/

@@ -77,7 +77,7 @@
                 <div class="ml-2">
                   <div class="t-5">Tentang COVID-19</div>
                   <p>Ringkasan mengenai virus dan gejala.
-                    <span onclick="boModal1()" class="t-m">
+                    <span id="boModal1" onclick="kmodal(this)" class="t-m">
                       <button class="tbl-informasi">selebihnya...</button>
                     </span>
                   </p>
@@ -88,7 +88,7 @@
                 <div class="ml-2">
                   <div class="t-5">Apa yang bisa dilakukan</div>
                   <p>Informasi tentang physical distancing, isolasi diri, dan lainnya.
-                    <span onclick="boModal2()" class="t-m">
+                    <span id="boModal2" onclick="kmodal(this)" class="t-m">
                       <button class="tbl-informasi">selebihnya...</button>
                     </span>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="ml-2">
                   <div class="t-5">Test COVID-19</div>
                   <p>Panduan terkait siapa yang harus diuji dan apa yang diharapkan dari hasil.
-                    <span onclick="boModal3()" class="t-m">
+                    <span id="boModal3" onclick="kmodal(this)" class="t-m">
                       <button class="tbl-informasi">selebihnya...</button>
                     </span>
                   </p>
@@ -108,6 +108,9 @@
             <span class="border-space mt-4"></span>
             <p class="t-c my-4">sumber data : 
               <a href="https://corona.jogjaprov.go.id" target="__blank">corona.jogjaprov.go.id</a>
+            </p>
+            <p class="t-c my-4">refrensi desain : 
+              <a href="https://apple.com/covid19" target="___blank">apple</a>
             </p>
             <span class="border-space"></span>
           </div>
@@ -135,7 +138,7 @@
                 </div>
                 <div class="d-f fd-c ml-2">
                   <div class="">Chandra Adam Pratama</div>
-                  <div class="">@penyucian</div>
+                  <div class=""><a href="https://github.com/penyucian" target="__blank">@penyucian</a></div>
                 </div>
               </div>
             </div>
@@ -157,8 +160,8 @@
       <div class="d-f jc-c">
         <div class="m-w2 modal my-5 p-4">
           <div class="d-f ">
-            <div onclick="clModal1()" class="cls">
-              <div class="wr-tbl">
+            <div onclick="kmodal(this)" class="cls">
+              <div class="wr-tbl wr-tbl1">
                 <img class="y" src="./asset/img/i-plusb.svg" alt="close">
               </div>
             </div>
@@ -230,7 +233,7 @@
                       pekerja, penyedia layanan medis darurat, polisi, 
                       dan pekerja penting lainnya, jadi silakan berkonsultasi dengan kamu 
                       dokter untuk ketersediaan di daerah kamu.</li>
-              <li>Jika kamu mengembangkan rambu peringatan darurat, hubungi 119 ext 9. 
+              <li>Jika kamu mendapati gejala  darurat, hubungi 119 ext 9. 
                       Tanda-tanda peringatan darurat utama meliputi: dada persisten 
                       rasa sakit atau tekanan; kesulitan bernapas ekstrim; parah, 
                       pusing konstan atau pusing; dan kesulitan bangun.</li>
@@ -244,8 +247,8 @@
       <div class="d-f jc-c">
         <div class="m-w2 modal my-5 p-4">
           <div class="d-f ">
-            <div onclick="clModal2()" class="cls">
-              <div class="wr-tbl">
+            <div onclick="kmodal(this)" class="cls">
+              <div class="wr-tbl wr-tbl1">
                 <img class="y" src="./asset/img/i-plusb.svg" alt="close">
               </div>
             </div>
@@ -253,7 +256,7 @@
           <h2>Apa yang bisa dilakukan</h2>
           <p>Informasi tentang physical distancing, isolasi diri, dan lainnya.</p>
           <div class="d-f mt-2">
-            <img src="./asset/img/icon.svg" alt="close">
+            <img src="./asset/img/wash.svg" alt="close">
             <h3 class="ml-2">Cuci tangan</h3>
           </div>
           <p>Cuci tangan adalah langkah terbaik untuk menjaga kamu 
@@ -274,7 +277,7 @@
               <li>Hindari menyentuh muka dan mata.</li>
             </ul>
             <div class="d-f mt-2">
-              <img src="./asset/img/icon.svg" alt="close">
+              <img src="./asset/img/pd.svg" alt="close">
               <h3 class="ml-2">Physical Distancing</h3>
             </div>
             <p>The main way COVID-19 spreads is between people. Social distancing helps to stop the spread.</p>
@@ -286,7 +289,7 @@
               <li>Tetap dirumah jika kamu sakit.</li>
             </ul>
             <div class="d-f mt-2">
-              <img src="./asset/img/icon.svg" alt="close">
+              <img src="./asset/img/isolate.svg" alt="close">
               <h3 class="ml-2">Isolasi diri dari orang lain </h3>
             </div>
             <p>Jika kamu telah dikonfirmasi atau kontak dengan pasien positif 
@@ -317,7 +320,7 @@
                     tetapi jangan menggunakan angkutan umum.</li>
             </ul>
             <div class="d-f mt-2">
-              <img src="./asset/img/icon.svg" alt="close">
+              <img src="./asset/img/check.svg" alt="close">
               <h3 class="ml-2">Monitoring gejala</h3>
             </div>
             <p>Amati gejala COVID-19 Anda selama 14 hari jika Anda curiga 
@@ -337,7 +340,7 @@
                     tahu Anda apa yang harus dilakukan selanjutnya.</li>
             </ul>
             <div class="d-f mt-2">
-              <img src="./asset/img/icon.svg" alt="close">
+              <img src="./asset/img/Clean.svg" alt="close">
               <h3 class="ml-2">Membersihkan dan disinfektan permukaan</h3>
             </div>
             <p>Permukaan yang umum digunakan harus dibersihkan dan didesinfeksi secara teratur.</p>
@@ -372,8 +375,8 @@
       <div class="d-f jc-c py-5">
         <div class="m-w2 modal p-4">
           <div class="d-f ">
-            <div onclick="clModal3()" class="cls">
-              <div class="wr-tbl">
+            <div onclick="kmodal(this)" class="cls">
+              <div class="wr-tbl wr-tbl1">
                 <img class="y" src="./asset/img/i-plusb.svg" alt="close">
               </div>
             </div>
@@ -382,7 +385,7 @@
           <p>Panduan terkini tentang siapa yang harus 
                 diuji dan apa yang diharapkan dari hasil tes.</p>
           <div class="d-f mt-2">
-            <img src="./asset/img/icon.svg" alt="close">
+            <img src="./asset/img/who.svg" alt="close">
             <h3 class="ml-2">Siapa yang harus diuji?</h3>
           </div>
 
@@ -391,7 +394,7 @@
               <li>Sebagian besar gejala ringan dapat diobati di rumah.</li>
             </ul>
             <div class="d-f mt-2">
-              <img src="./asset/img/icon.svg" alt="close">
+              <img src="./asset/img/testh.svg" alt="close">
               <h3 class="ml-2">Bagaimana cara saya diuji?</h3>
             </div>
             <p>Dokter atau pihak pemda Anda akan memutuskan apakah Anda harus diuji.</p>
@@ -420,7 +423,7 @@
               </li>
             </ul>
             <div class="d-f mt-2">
-              <img src="./asset/img/icon.svg" alt="close">
+              <img src="./asset/img/except.svg" alt="close">
               <h3 class="ml-2">Apa yang bisa saya harapkan dari hasil tes?</h3>
             </div>
             <p>Pengujian dapat mengidentifikasi apakah Anda memiliki virus yang menyebabkan COVID-19.</p>
@@ -442,13 +445,13 @@
                     kapan saja dan terserang penyakit.</li>
             </ul>
             <div class="d-f mt-2">
-              <img src="./asset/img/icon.svg" alt="close">
+              <img src="./asset/img/waiting.svg" alt="close">
               <h3 class="ml-2">Apa yang bisa saya lakukan sambil menunggu hasil?</h3>
             </div>
             <p>Waktu penyelesaian pengujian bervariasi di antara lokasi pengujian.</p>
             <ul>
               <li>Sambil menunggu hasil tes, segera dapatkan perawatan darurat 
-                    jika Anda mengembangkan tanda-tanda peringatan darurat, 
+                    jika Anda mendapati tanda-tanda gejala darurat, 
                     yang meliputi: nyeri atau tekanan dada yang persisten; 
                     kesulitan bernapas ekstrim; parah, pusing terus-menerus 
                     atau pusing; bicara tidak jelas; dan kesulitan bangun.</li>
