@@ -9,7 +9,9 @@ body{
   font-family: Poppins,Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 0;
+  padding: 0;
   overflow-y: auto;
+  width: 100%;
 }
 
 input::-webkit-outer-spin-button,
@@ -45,6 +47,9 @@ img{
 }
 
 .container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
@@ -227,10 +232,9 @@ Semua urusan aksesoris disini
   width: 100%;
 }
 
-.aside{
+.input-data{
   display: none;
   position: fixed;
-  height: 100vh;
   width: 280px;
   background-color:#ECF0F3;
   border-radius: 1rem;

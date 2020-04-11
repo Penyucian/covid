@@ -9,15 +9,14 @@
   <link rel="stylesheet" href="./asset/css/index.css" />
 </head>
 
-<body id="l">
-  <div class="container">
-    <header>
-      <nav class="nav d-f jc-c">
-        <img src="./asset/img/Jogja.svg" alt="logo" class="">
-      </nav>
-    </header>
-    <main class="d-f jc-c">
-      <div class="m-w d-f fd-c">
+<body>
+  <header>
+    <nav class="nav d-f jc-c">
+      <img src="./asset/img/Jogja.svg" alt="logo" class="">
+    </nav>
+  </header>
+  <main class="container">
+    <div class="m-w d-f fd-c">
         <div class="d-f fd-c jc-c">
           <h1 class="judul t-c mt-3 mb-0">YOGYAKARTA TANGGAP COVID-19</h1>
           <p class="t-c mt-1 mb-0">Jangan panik! Mari bersama lawan COVID-19. Hubungi layanan Yogyakarta Tanggap
@@ -106,53 +105,56 @@
               </div>
             </div>
             <span class="border-space mt-4"></span>
-            <p class="t-c my-4">sumber data : 
+            <p class="t-c my-4">sumber data :
               <a href="https://corona.jogjaprov.go.id" target="__blank">corona.jogjaprov.go.id</a>
             </p>
-            <p class="t-c my-4">refrensi desain : 
+            <p class="t-c my-4">refrensi desain :
               <a href="https://apple.com/covid19" target="___blank">apple</a>
             </p>
             <span class="border-space"></span>
+            <div class="py-4 d-f jc-c fw-w">
+              Sumber belajar :
+              <a href="https://dicoding.com" target="__blank" class="ml-1">dicoding.com</a> ;
+              <a href="https://www.w3schools.com/" target="__blank" class="ml-1">w3schools.com</a> ;
+              <a href="https://developer.mozilla.com" target="__blank" class="ml-1">developer.mozilla.com</a>.
+            </div>
           </div>
-          <aside class="p-2 aside d-f fd-c" id="bAside">
-            <div class="d-f jc-e">
-              <div onclick="tAside()" class="cls">
-                <div class="wr-tbl">
-                  <img class="y" src="./asset/img/i-plusb.svg" alt="close">
-                </div>
-              </div>
-            </div>
-            <div class="i-d mt-4" id="i-d-p">
-              <div class="p-2 d-f fd-c jc-c">
-                <div class="t-c t-b mb-1">tambah data pasien</div>
-                <input class="i-b" type="number" placeholder="pasien odp" name="tOdp" id="i-odp" value="">
-                <input class="i-b" type="number" placeholder="pasien pdp" name="tPdp" id="i-pdp" value="">
-                <input class="i-b" type="number" placeholder="pasien positif" name="tPositif" id="i-positif" value="">
-                <button class="tbl tbl-1 my-3" type="submit" onclick="updateD()">submit</button>
-              </div>
-            </div>
-            <div class="i-t mt-4">
-              <div class="d-f">
-                <div>
-                  <img src="./asset/img/icon.svg" alt="">
-                </div>
-                <div class="d-f fd-c ml-2">
-                  <div class="">Chandra Adam Pratama</div>
-                  <div class=""><a href="https://github.com/penyucian" target="__blank">@penyucian</a></div>
-                </div>
-              </div>
-            </div>
         </div>
-        </aside>
+        <div class="p-2 input-data d-f fd-c" id="bAside">
+          <div class="d-f jc-e">
+            <div onclick="tAside()" class="cls">
+              <div class="wr-tbl">
+                <img class="y" src="./asset/img/i-plusb.svg" alt="close">
+              </div>
+            </div>
+          </div>
+          <div class="i-d mt-4" id="i-d-p">
+            <div class="p-2 d-f fd-c jc-c">
+              <div class="t-c t-b mb-1">tambah data pasien</div>
+              <input class="i-b" type="number" placeholder="pasien odp" name="tOdp" id="i-odp" value="">
+              <input class="i-b" type="number" placeholder="pasien pdp" name="tPdp" id="i-pdp" value="">
+              <input class="i-b" type="number" placeholder="pasien positif" name="tPositif" id="i-positif" value="">
+              <button class="tbl tbl-1 my-3" type="submit" onclick="updateD()">submit</button>
+            </div>
+          </div>
+          <div class="i-t mt-4">
+            <div class="d-f">
+              <div>
+                <img src="./asset/img/icon.svg" alt="">
+              </div>
+              <div class="d-f fd-c ml-2">
+                <div class="">Chandra Adam Pratama</div>
+                <div class=""><a href="https://github.com/penyucian" target="__blank">@penyucian</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <aside>
+        a
+      </aside>
     </main>
     <footer class="container">
-      <div class="py-4 d-f jc-c fw-w">
-        Sumber belajar : 
-        <a href="https://dicoding.com" target="__blank" class="ml-1">dicoding.com</a> ; 
-        <a href="https://www.w3schools.com/" target="__blank" class="ml-1">w3schools.com</a> ; 
-        <a href="https://developer.mozilla.com" target="__blank" class="ml-1">developer.mozilla.com</a>.
-      </div>
     </footer>
   </div>
   <div class="bmodal" id="bModal1">
@@ -175,68 +177,68 @@
           <p>COVID-19 adalah penyebaran penyakit pernapasan baru
             di seluruh dunia dan itu disebabkan oleh coronavirus.
             COVID-19 adalah kependekan dari “coronavirus disease 2019.”
-          <ul>
-            <li>Virus ini diduga menyebar terutama dalam kerumunan
-                  dan berdekatan satu sama lain kurang dari 1,5 meter
-                  dan melalui tetesan pernapasan yang dihasilkan 
-                  ketika orang yang terinfeksi batuk atau bersin.</li>
-            <li>Orang yang paling memungkinkan menularkan yaitu
-                  orang sakit, namun mereka yang tidak memiliki
-                  gejala masih bisa menularkan virus ke orang lain.</li>
-            <li>Saat ini masih belum ada vaksin atau obat untuk
-                  COVID-19 namun peniliti masih berusuha untuk 
-                  menemukannya</li>
-          </ul>
-          <div class="d-f mt-2">
-            <img src="./asset/img/gejala.svg" alt="close">
-            <h3 class="ml-2">Apa saja gejala COVID-19?</h3>
-          </div>
-          <p>Gejala yang paling umum sangat mirip dengan virus lain
-                virus: demam, batuk, dan kesulitan bernapas.</p>
-          <ul>
-            <li>Gejala umum COVID-19 bertambah seiring waktu. 
-                  Untuk yang informasi yang terbaru daftar 
-                  gejala, kunjungi situs web CDC.</li>
-            <li>Gejala mungkin muncul 2 sampai 14hari setelah
-                  terpapar virus ini dan tergantung ada atau 
-                  tidaknya penyakit bawaan.</li>
+            <ul>
+              <li>Virus ini diduga menyebar terutama dalam kerumunan
+                dan berdekatan satu sama lain kurang dari 1,5 meter
+                dan melalui tetesan pernapasan yang dihasilkan
+                ketika orang yang terinfeksi batuk atau bersin.</li>
+              <li>Orang yang paling memungkinkan menularkan yaitu
+                orang sakit, namun mereka yang tidak memiliki
+                gejala masih bisa menularkan virus ke orang lain.</li>
+              <li>Saat ini masih belum ada vaksin atau obat untuk
+                COVID-19 namun peniliti masih berusuha untuk
+                menemukannya</li>
+            </ul>
+            <div class="d-f mt-2">
+              <img src="./asset/img/gejala.svg" alt="close">
+              <h3 class="ml-2">Apa saja gejala COVID-19?</h3>
+            </div>
+            <p>Gejala yang paling umum sangat mirip dengan virus lain
+              virus: demam, batuk, dan kesulitan bernapas.</p>
+            <ul>
+              <li>Gejala umum COVID-19 bertambah seiring waktu.
+                Untuk yang informasi yang terbaru daftar
+                gejala, kunjungi situs web CDC.</li>
+              <li>Gejala mungkin muncul 2 sampai 14hari setelah
+                terpapar virus ini dan tergantung ada atau
+                tidaknya penyakit bawaan.</li>
             </ul>
             <div class="d-f mt-2">
               <img src="./asset/img/siapa.svg" alt="close">
               <h3 class="ml-2">Siapa yang beresiko dengan COVID-19?</h3>
             </div>
             <p>Semua orang beresiko tertular COVID-19, namun beberapa
-                  ada dalam resiko besar apabila ada penyakit serius.</p>
+              ada dalam resiko besar apabila ada penyakit serius.</p>
             <ul>
-              <li>Secara umum, orang dewasa berusia 65 dan lebih tua dan orang-orang 
-                      dari segala usia yang memiliki penyakit jantung, penyakit paru - paru, dan 
-                      diabetes dengan komplikasi (seperti, tetapi tidak terbatas 
-                      untuk, penyakit ginjal, penyakit jantung, dan neuropati) mungkin 
-                      berada pada risiko yang lebih tinggi untuk penyakit serius dari COVID-19.</li>
+              <li>Secara umum, orang dewasa berusia 65 dan lebih tua dan orang-orang
+                dari segala usia yang memiliki penyakit jantung, penyakit paru - paru, dan
+                diabetes dengan komplikasi (seperti, tetapi tidak terbatas
+                untuk, penyakit ginjal, penyakit jantung, dan neuropati) mungkin
+                berada pada risiko yang lebih tinggi untuk penyakit serius dari COVID-19.</li>
             </ul>
             <div class="d-f mt-2">
               <img src="./asset/img/see.svg" alt="close">
               <h3 class="ml-2">Kapan saya harus menemui dokter?</h3>
             </div>
-            <p>Mengetahui kapan harus pergi ke dokter dapat menjaga 
-                  ketersediaan medis tersedia untuk mereka yang 
-                  paling membutuhkannya.</p>
+            <p>Mengetahui kapan harus pergi ke dokter dapat menjaga
+              ketersediaan medis tersedia untuk mereka yang
+              paling membutuhkannya.</p>
             <ul>
               <li>Sebagian besar gejala ringan dapat diobati di rumah.</li>
-              <li>Jika kamu memiliki gejala ringan, hubungi dokter kamu sebelumnya 
-                      pergi ke kantor mereka. Banyak kantor dokter 
-                      melakukan kunjungan virtual. Mereka akan memberi 
-                      tahu kamu apa yang harus dilakukan 
-                      berdasarkan lokasi kamu.</li>
-              <li>Pengujian terbatas ketersediaan di seluruh negeri 
-                      dan saat ini sedang diprioritaskan untuk perawatan kesehatan 
-                      pekerja, penyedia layanan medis darurat, polisi, 
-                      dan pekerja penting lainnya, jadi silakan berkonsultasi dengan kamu 
-                      dokter untuk ketersediaan di daerah kamu.</li>
-              <li>Jika kamu mendapati gejala  darurat, hubungi 119 ext 9. 
-                      Tanda-tanda peringatan darurat utama meliputi: dada persisten 
-                      rasa sakit atau tekanan; kesulitan bernapas ekstrim; parah, 
-                      pusing konstan atau pusing; dan kesulitan bangun.</li>
+              <li>Jika kamu memiliki gejala ringan, hubungi dokter kamu sebelumnya
+                pergi ke kantor mereka. Banyak kantor dokter
+                melakukan kunjungan virtual. Mereka akan memberi
+                tahu kamu apa yang harus dilakukan
+                berdasarkan lokasi kamu.</li>
+              <li>Pengujian terbatas ketersediaan di seluruh negeri
+                dan saat ini sedang diprioritaskan untuk perawatan kesehatan
+                pekerja, penyedia layanan medis darurat, polisi,
+                dan pekerja penting lainnya, jadi silakan berkonsultasi dengan kamu
+                dokter untuk ketersediaan di daerah kamu.</li>
+              <li>Jika kamu mendapati gejala darurat, hubungi 119 ext 9.
+                Tanda-tanda peringatan darurat utama meliputi: dada persisten
+                rasa sakit atau tekanan; kesulitan bernapas ekstrim; parah,
+                pusing konstan atau pusing; dan kesulitan bangun.</li>
             </ul>
         </div>
       </div>
@@ -259,20 +261,20 @@
             <img src="./asset/img/wash.svg" alt="close">
             <h3 class="ml-2">Cuci tangan</h3>
           </div>
-          <p>Cuci tangan adalah langkah terbaik untuk menjaga kamu 
-                tetap sehat. Berikut langkah-langkahnya:
+          <p>Cuci tangan adalah langkah terbaik untuk menjaga kamu
+            tetap sehat. Berikut langkah-langkahnya:
             <ul>
-              <li>Basahi tanganmu dengan air bersih yang mengalir. 
-                      Matikan keran dan oleskan sabun.</li>
-              <li>Bersihkan tangan kamu dengan menggosok bagian 
-                      punggung tangan, sela sela jari, dan dibawah
-                      kuku.</li>
-              <li>Gosok tanganmu selama 20 detik. Nyanyikan 
+              <li>Basahi tanganmu dengan air bersih yang mengalir.
+                Matikan keran dan oleskan sabun.</li>
+              <li>Bersihkan tangan kamu dengan menggosok bagian
+                punggung tangan, sela sela jari, dan dibawah
+                kuku.</li>
+              <li>Gosok tanganmu selama 20 detik. Nyanyikan
                 "Gundul gundul pacul" saat membersihkan tangan untuk mengukur waktu</li>
               <li>Bilas tanganmu sampai bersih dengan air mengalir dan keringkan.</li>
               <li>Tidak ada sabun atau air? gunakan hand sanitizer yang mengandung
-                    setidaknya 60 persen alkohol. Oleskan ke telapak tangan. 
-                    gosok tanganmu secara bersamaan hingga tanganmu kering.
+                setidaknya 60 persen alkohol. Oleskan ke telapak tangan.
+                gosok tanganmu secara bersamaan hingga tanganmu kering.
               </li>
               <li>Hindari menyentuh muka dan mata.</li>
             </ul>
@@ -292,52 +294,52 @@
               <img src="./asset/img/isolate.svg" alt="close">
               <h3 class="ml-2">Isolasi diri dari orang lain </h3>
             </div>
-            <p>Jika kamu telah dikonfirmasi atau kontak dengan pasien positif 
-              COVID-19 atau memiliki gejala, isolasi dirimu didalam rumah 
+            <p>Jika kamu telah dikonfirmasi atau kontak dengan pasien positif
+              COVID-19 atau memiliki gejala, isolasi dirimu didalam rumah
               untuk menjaga yang lain.</p>
             <ul>
-              <li>Tetap dirumah. Amati gejalamu dan apabila kian 
-                    memburuk, segera kontak dokter.</li>
-              <li>Sebisa mungkin minimalisir kontak dengan anggota 
-                    keluarga yang lain, termasuk hewan peliharaan. 
-                    Tentukan ruangan hanya untuk Anda gunakan. 
-                    Idealnya gunakan kamar mandi untuk Anda sendiri juga.</li>
-              <li>Cuci tangan Anda sesering mungkin. Jika Anda batuk atau 
-                    bersin, tutupi mulut dan hidung Anda dengan tisu atau 
-                    sikut anda. Buang tisu dan segera cuci tangan Anda. 
-                    Hindari berbagi barang-barang pribadi seperti piring, 
-                    handuk, dan tempat tidur dengan orang lain di rumah 
-                    Anda. Bersihkan dan disinfeksi permukaan yang sering 
-                    digunakan. Cuci cucian sesering mungkin.</li>
-              <li>Mintalah seorang anggota keluarga atau teman menjalankan 
-                    tugas untuk Anda seperti mengambil bahan makanan atau resep.</li>
-              <li>Kenakan masker jika Anda harus berada di sekitar orang 
-                    lain. Jika Anda tidak dapat menemukan masker, 
-                    buat masker dari pakaian seperti syal. Jika Anda 
-                    tidak bisa memakai masker karena kesulitan bernafas, 
-                    pastikan ada orang dekat anda membantu memakainya.</li>
-              <li>Anda dapat meninggalkan rumah untuk menerima perawatan medis, 
-                    tetapi jangan menggunakan angkutan umum.</li>
+              <li>Tetap dirumah. Amati gejalamu dan apabila kian
+                memburuk, segera kontak dokter.</li>
+              <li>Sebisa mungkin minimalisir kontak dengan anggota
+                keluarga yang lain, termasuk hewan peliharaan.
+                Tentukan ruangan hanya untuk Anda gunakan.
+                Idealnya gunakan kamar mandi untuk Anda sendiri juga.</li>
+              <li>Cuci tangan Anda sesering mungkin. Jika Anda batuk atau
+                bersin, tutupi mulut dan hidung Anda dengan tisu atau
+                sikut anda. Buang tisu dan segera cuci tangan Anda.
+                Hindari berbagi barang-barang pribadi seperti piring,
+                handuk, dan tempat tidur dengan orang lain di rumah
+                Anda. Bersihkan dan disinfeksi permukaan yang sering
+                digunakan. Cuci cucian sesering mungkin.</li>
+              <li>Mintalah seorang anggota keluarga atau teman menjalankan
+                tugas untuk Anda seperti mengambil bahan makanan atau resep.</li>
+              <li>Kenakan masker jika Anda harus berada di sekitar orang
+                lain. Jika Anda tidak dapat menemukan masker,
+                buat masker dari pakaian seperti syal. Jika Anda
+                tidak bisa memakai masker karena kesulitan bernafas,
+                pastikan ada orang dekat anda membantu memakainya.</li>
+              <li>Anda dapat meninggalkan rumah untuk menerima perawatan medis,
+                tetapi jangan menggunakan angkutan umum.</li>
             </ul>
             <div class="d-f mt-2">
               <img src="./asset/img/check.svg" alt="close">
               <h3 class="ml-2">Monitoring gejala</h3>
             </div>
-            <p>Amati gejala COVID-19 Anda selama 14 hari jika Anda curiga 
-                  Anda menderita penyakit tersebut, telah berada di 
-                  sekitar seseorang yang dites positif untuknya, 
-                  atau Anda telah didiagnosis.</p>
+            <p>Amati gejala COVID-19 Anda selama 14 hari jika Anda curiga
+              Anda menderita penyakit tersebut, telah berada di
+              sekitar seseorang yang dites positif untuknya,
+              atau Anda telah didiagnosis.</p>
             <ul>
-              <li>Pertama, cari perawatan darurat segera jika Anda terdapat 
-                    tanda-tanda peringatan darurat, yang meliputi: nyeri atau 
-                    tekanan dada yang persisten; kesulitan bernapas ekstrim; 
-                    parah, pusing terus-menerus atau pusing; bicara tidak 
-                    jelas; dan kesulitan bangun.</li>
+              <li>Pertama, cari perawatan darurat segera jika Anda terdapat
+                tanda-tanda peringatan darurat, yang meliputi: nyeri atau
+                tekanan dada yang persisten; kesulitan bernapas ekstrim;
+                parah, pusing terus-menerus atau pusing; bicara tidak
+                jelas; dan kesulitan bangun.</li>
               <li>Siapkan informasi kontak penyedia medis Anda.</li>
               <li>Terus pantau gejala kamu, termasuk suhu temperaturmu.</li>
-              <li>Jika gejala Anda memburuk, hubungi dokter Anda segera 
-                    untuk melakukan pemeriksaan dan mereka akan memberi 
-                    tahu Anda apa yang harus dilakukan selanjutnya.</li>
+              <li>Jika gejala Anda memburuk, hubungi dokter Anda segera
+                untuk melakukan pemeriksaan dan mereka akan memberi
+                tahu Anda apa yang harus dilakukan selanjutnya.</li>
             </ul>
             <div class="d-f mt-2">
               <img src="./asset/img/Clean.svg" alt="close">
@@ -345,26 +347,26 @@
             </div>
             <p>Permukaan yang umum digunakan harus dibersihkan dan didesinfeksi secara teratur.</p>
             <ul>
-              <li>alan menjadi ide yang baik untuk secara 
-                    rutin membersihkan dan mendisinfeksi permukaan 
-                    yang sering disentuh seperti meja, gagang pintu, 
-                    sakelar lampu, gagang, meja, toilet, keran, 
-                    dan bak cuci. Tetapi jika Anda memiliki kasus 
-                    COVID-19 yang dicurigai atau dikonfirmasi, 
-                    waspadai melakukan hal ini setiap hari.</li>
-              <li>Pertama, bersihkan permukaan yang kotor dengan 
-                    sabun dan air. Hal ini dimaksudkan untuk 
-                    menghilangkan kotoran dan menurunkan jumlah 
-                    kuman — tetapi tidak akan membunuh kuman.</li>
-              <li>Selanjutnya, desinfeksi permukaan untuk membunuh 
-                    kuman. Desinfektan setelah pembersihan selanjutnya 
-                    dapat menurunkan risiko penyebaran infeksi. 
-                    Disinfektan rumah tangga terdaftar EPA yang paling 
-                    umum akan berfungsi. Atau encerkan pemutih rumah 
-                    tangga Anda dengan 1/3 cangkir pemutih per galon air.</li>
-              <li>Kenakan sarung tangan khusus untuk pembersihan 
-                    dan disinfektan terkait COVID-19 atau gunakan 
-                    sarung tangan sekali pakai dan buang setelah digunakan.</li>
+              <li>alan menjadi ide yang baik untuk secara
+                rutin membersihkan dan mendisinfeksi permukaan
+                yang sering disentuh seperti meja, gagang pintu,
+                sakelar lampu, gagang, meja, toilet, keran,
+                dan bak cuci. Tetapi jika Anda memiliki kasus
+                COVID-19 yang dicurigai atau dikonfirmasi,
+                waspadai melakukan hal ini setiap hari.</li>
+              <li>Pertama, bersihkan permukaan yang kotor dengan
+                sabun dan air. Hal ini dimaksudkan untuk
+                menghilangkan kotoran dan menurunkan jumlah
+                kuman — tetapi tidak akan membunuh kuman.</li>
+              <li>Selanjutnya, desinfeksi permukaan untuk membunuh
+                kuman. Desinfektan setelah pembersihan selanjutnya
+                dapat menurunkan risiko penyebaran infeksi.
+                Disinfektan rumah tangga terdaftar EPA yang paling
+                umum akan berfungsi. Atau encerkan pemutih rumah
+                tangga Anda dengan 1/3 cangkir pemutih per galon air.</li>
+              <li>Kenakan sarung tangan khusus untuk pembersihan
+                dan disinfektan terkait COVID-19 atau gunakan
+                sarung tangan sekali pakai dan buang setelah digunakan.</li>
             </ul>
         </div>
       </div>
@@ -382,84 +384,84 @@
             </div>
           </div>
           <h2>COVID-19 Testing</h2>
-          <p>Panduan terkini tentang siapa yang harus 
-                diuji dan apa yang diharapkan dari hasil tes.</p>
+          <p>Panduan terkini tentang siapa yang harus
+            diuji dan apa yang diharapkan dari hasil tes.</p>
           <div class="d-f mt-2">
             <img src="./asset/img/who.svg" alt="close">
             <h3 class="ml-2">Siapa yang harus diuji?</h3>
           </div>
 
           <p>Tidak semua orang perlu diuji untuk COVID-19.</p>
-            <ul>
-              <li>Sebagian besar gejala ringan dapat diobati di rumah.</li>
-            </ul>
-            <div class="d-f mt-2">
-              <img src="./asset/img/testh.svg" alt="close">
-              <h3 class="ml-2">Bagaimana cara saya diuji?</h3>
-            </div>
-            <p>Dokter atau pihak pemda Anda akan memutuskan apakah Anda harus diuji.</p>
-            <ul>
-              <li>Jika merasa tidak sehat dengan kriteria <b>demam 38 derajat</b> 
-                    dan <b>batuk/ pilek</b>, istirahatlah dan minum obat. Apabila 
-                    keluhan berlanjut atau disertai kesulitan bernafas segera 
-                    berobat ke fasilitas kesehatan terdakat.</li>
-              <li>Jika anda merasa sehat namun ada riwayat 14 hari lalu melakukan 
-                    perjalanan negara atau kota terjangkit COVID-19 atau merasa 
-                    pernah melakukan kontak dengan penderita COVID-19. hubungi hotline corona</li>
-              <li>Petugas medis akan melakukan screening pada suspect COVID-19. Apabila 
-                    memenuhi kriteria akan dirujuk ke rumah sakit rujukan COVID-19, jika
-                    tidak maka kamu akan dirawat inap atau rawat jalan tergantung dengan 
-                    keputusan dokter.</li>
-              <li>Selanjutnya anda akan diantar ke RS rujukan menggunakan ambulan didampingi 
-                    oleh petugas kesehatan dengan alat pelindung diri (APD).</li>
-              <li>Di RS rujukan akan dilakukan pengambilan specimen untuk pemeriksaan laboratorium 
-                    dan dirawat diruang isolasi</li>
-              <li>Specimen akan dikirim ke Badan Penelitian dan Pengembangan Kesehatan di Jakarta. 
-                    Hasil pemeriksaan pertama akan keluar dalam 24 jam setelah specimen diterima, 
-                    apabila negatif maka akan dirawat sesuai dengan penyebab penyakit. Apabila 
-                    hasilnya positif kamu akan dinyatakan sebagai penderita COVID-19, sampel akan 
-                    diambil setiap hari, dan anda akan dikeluarkan dari ruang isolasi apabila 
-                    hasil pemeriksaan sampel dua kali berturut turut hasilnya negatif.
-              </li>
-            </ul>
-            <div class="d-f mt-2">
-              <img src="./asset/img/except.svg" alt="close">
-              <h3 class="ml-2">Apa yang bisa saya harapkan dari hasil tes?</h3>
-            </div>
-            <p>Pengujian dapat mengidentifikasi apakah Anda memiliki virus yang menyebabkan COVID-19.</p>
-            <ul>
-              <li>Tidak ada pengobatan yang valid secara khusus 
-                    untuk COVID-19. Tetapi hasil tes dapat membantu 
-                    Anda dan dokter Anda memutuskan apa yang harus 
-                    dilakukan selanjutnya.</li>
-              <li>Jika Anda dites positif dan memiliki gejala ringan, 
-                    dokter mungkin menyarankan Anda untuk merawat 
-                    diri sendiri di rumah. </li>
-              <li>Jika Anda tes positif dan memiliki gejala yang 
-                    parah, dokter Anda akan memberi tahu Anda 
-                    apa yang harus dilakukan.</li>
-              <li>Tes negatif berarti Anda mungkin tidak terinfeksi 
-                    pada saat pengujian. Namun, ada kemungkinan bahwa 
-                    Anda dites awal ke infeksi Anda dan bahwa Anda 
-                    dapat dites positif nanti. Anda juga bisa terpapar 
-                    kapan saja dan terserang penyakit.</li>
-            </ul>
-            <div class="d-f mt-2">
-              <img src="./asset/img/waiting.svg" alt="close">
-              <h3 class="ml-2">Apa yang bisa saya lakukan sambil menunggu hasil?</h3>
-            </div>
-            <p>Waktu penyelesaian pengujian bervariasi di antara lokasi pengujian.</p>
-            <ul>
-              <li>Sambil menunggu hasil tes, segera dapatkan perawatan darurat 
-                    jika Anda mendapati tanda-tanda gejala darurat, 
-                    yang meliputi: nyeri atau tekanan dada yang persisten; 
-                    kesulitan bernapas ekstrim; parah, pusing terus-menerus 
-                    atau pusing; bicara tidak jelas; dan kesulitan bangun.</li>
-              <li>Siapkan informasi kontak penyedia medis Anda.</li>
-              <li>Jika gejala Anda memburuk, hubungi dokter Anda 
-                    dan beri tahu mereka gejala Anda. Mereka akan 
-                    memberi tahu Anda apa yang harus dilakukan selanjutnya.</li>
-            </ul>
+          <ul>
+            <li>Sebagian besar gejala ringan dapat diobati di rumah.</li>
+          </ul>
+          <div class="d-f mt-2">
+            <img src="./asset/img/testh.svg" alt="close">
+            <h3 class="ml-2">Bagaimana cara saya diuji?</h3>
+          </div>
+          <p>Dokter atau pihak pemda Anda akan memutuskan apakah Anda harus diuji.</p>
+          <ul>
+            <li>Jika merasa tidak sehat dengan kriteria <b>demam 38 derajat</b>
+              dan <b>batuk/ pilek</b>, istirahatlah dan minum obat. Apabila
+              keluhan berlanjut atau disertai kesulitan bernafas segera
+              berobat ke fasilitas kesehatan terdakat.</li>
+            <li>Jika anda merasa sehat namun ada riwayat 14 hari lalu melakukan
+              perjalanan negara atau kota terjangkit COVID-19 atau merasa
+              pernah melakukan kontak dengan penderita COVID-19. hubungi hotline corona</li>
+            <li>Petugas medis akan melakukan screening pada suspect COVID-19. Apabila
+              memenuhi kriteria akan dirujuk ke rumah sakit rujukan COVID-19, jika
+              tidak maka kamu akan dirawat inap atau rawat jalan tergantung dengan
+              keputusan dokter.</li>
+            <li>Selanjutnya anda akan diantar ke RS rujukan menggunakan ambulan didampingi
+              oleh petugas kesehatan dengan alat pelindung diri (APD).</li>
+            <li>Di RS rujukan akan dilakukan pengambilan specimen untuk pemeriksaan laboratorium
+              dan dirawat diruang isolasi</li>
+            <li>Specimen akan dikirim ke Badan Penelitian dan Pengembangan Kesehatan di Jakarta.
+              Hasil pemeriksaan pertama akan keluar dalam 24 jam setelah specimen diterima,
+              apabila negatif maka akan dirawat sesuai dengan penyebab penyakit. Apabila
+              hasilnya positif kamu akan dinyatakan sebagai penderita COVID-19, sampel akan
+              diambil setiap hari, dan anda akan dikeluarkan dari ruang isolasi apabila
+              hasil pemeriksaan sampel dua kali berturut turut hasilnya negatif.
+            </li>
+          </ul>
+          <div class="d-f mt-2">
+            <img src="./asset/img/except.svg" alt="close">
+            <h3 class="ml-2">Apa yang bisa saya harapkan dari hasil tes?</h3>
+          </div>
+          <p>Pengujian dapat mengidentifikasi apakah Anda memiliki virus yang menyebabkan COVID-19.</p>
+          <ul>
+            <li>Tidak ada pengobatan yang valid secara khusus
+              untuk COVID-19. Tetapi hasil tes dapat membantu
+              Anda dan dokter Anda memutuskan apa yang harus
+              dilakukan selanjutnya.</li>
+            <li>Jika Anda dites positif dan memiliki gejala ringan,
+              dokter mungkin menyarankan Anda untuk merawat
+              diri sendiri di rumah. </li>
+            <li>Jika Anda tes positif dan memiliki gejala yang
+              parah, dokter Anda akan memberi tahu Anda
+              apa yang harus dilakukan.</li>
+            <li>Tes negatif berarti Anda mungkin tidak terinfeksi
+              pada saat pengujian. Namun, ada kemungkinan bahwa
+              Anda dites awal ke infeksi Anda dan bahwa Anda
+              dapat dites positif nanti. Anda juga bisa terpapar
+              kapan saja dan terserang penyakit.</li>
+          </ul>
+          <div class="d-f mt-2">
+            <img src="./asset/img/waiting.svg" alt="close">
+            <h3 class="ml-2">Apa yang bisa saya lakukan sambil menunggu hasil?</h3>
+          </div>
+          <p>Waktu penyelesaian pengujian bervariasi di antara lokasi pengujian.</p>
+          <ul>
+            <li>Sambil menunggu hasil tes, segera dapatkan perawatan darurat
+              jika Anda mendapati tanda-tanda gejala darurat,
+              yang meliputi: nyeri atau tekanan dada yang persisten;
+              kesulitan bernapas ekstrim; parah, pusing terus-menerus
+              atau pusing; bicara tidak jelas; dan kesulitan bangun.</li>
+            <li>Siapkan informasi kontak penyedia medis Anda.</li>
+            <li>Jika gejala Anda memburuk, hubungi dokter Anda
+              dan beri tahu mereka gejala Anda. Mereka akan
+              memberi tahu Anda apa yang harus dilakukan selanjutnya.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -470,5 +472,4 @@
   </div>
   <script rel="stylesheet/javascript" src="./asset/js/index.js"></script>
 </body>
-
 </html>
