@@ -2,19 +2,15 @@ const sURL = 'http://5e805eab0eb3ec0016e910ad.mockapi.io/Provinsi/1';
 var odp = document.getElementById("odpP");
 var pdp = document.getElementById("pdpP");
 var positif = document.getElementById("positifP");
+const main = document.getElementsByTagName("main")[0];
 
 /* load */
 
-document.getElementById("l").onload = function () { l() }
-
 /* ~ */
 
-function l(d, e) {
-  setInterval(() => {
-    dataAwal(d, e)
-  }, 2000);
-}
-function dataAwal() {
+document.addEventListener('DOMContentLoaded', main)
+
+
   try {
     fetch(sURL).then(
       response => {
@@ -27,7 +23,6 @@ function dataAwal() {
   } catch (e) {
     console.log(e)
   };
-}
 
 function updateD() {
 
@@ -35,7 +30,7 @@ function updateD() {
   let iPdp = document.getElementById("i-pdp");
   let iPositif = document.getElementById("i-positif");
 
-  function post(obj) {
+  function post(obj, iOT, iPT, iPoT) {
     fetch(sURL, {
       method: 'PUT',
       headers: {
@@ -49,6 +44,9 @@ function updateD() {
         iOdp.value = ""
         iPdp.value = ""
         iPositif.value = ""
+        odp.innerHTML = iOT;
+        pdp.innerHTML = iPT;
+        positif.innerHTML = iPoT;
       })
       .catch((e) => {
         console.error('Error:', e);
@@ -65,8 +63,7 @@ function updateD() {
           let iPT = Number(iPdp.value) + Number(d.PDP);
           let iPoT = Number(iPositif.value) + Number(d.Positif);
           let obj = { "id": "1", "Provinsi": "Provinsi 1", "ODP": Number(iOT), "PDP": Number(iPT), "Positif": Number(iPoT) };
-          post(obj);
-          dataAwal();
+          post(obj, iOT, iPT, iPoT);
         }
       })
   } catch (e) {
