@@ -75,14 +75,14 @@ function bAside() {
   var a = document.getElementById("bAside");
   let b = document.getElementById("tFab");
   a.style.right = "0px";
-  b.style.right = "-1rem";
+  b.style.right = "-3rem";
 }
 
 function tAside() {
   var a = document.getElementById("bAside");
   let b = document.getElementById("tFab");
   a.style.right = "-360px";
-  b.style.right = "1rem";
+  b.style.right = "3rem";
 }
 
 function kmodal(e){
@@ -117,47 +117,3 @@ function kmodal(e){
     }
   }
 }
-/*
-function boModal1(){
-  let a = document.getElementById("bModal1");
-  let b = document.getElementsByTagName("BODY");
-  a.style.display = "block";
-  a.style.top = "0vh"
-  b[0].style.overflowY = "hidden"
-}
-function clModal1(){
-  let a = document.getElementById("bModal1");
-  let b = document.getElementsByTagName("BODY");
-  a.style.display = "none";
-  a.style.top = "120vh"
-  b[0].style.overflowY = "scroll"
-}
-function boModal2(){
-  let a = document.getElementById("bModal2");
-  let b = document.getElementsByTagName("BODY");
-  a.style.display = "block";
-  a.style.top = "0vh"
-  b[0].style.overflowY = "hidden"
-}
-function clModal2(){
-  let a = document.getElementById("bModal2");
-  let b = document.getElementsByTagName("BODY");
-  a.style.display = "none";
-  a.style.top = "120vh"
-  b[0].style.overflowY = "scroll"
-}
-
-function boModal3(){
-  let a = document.getElementById("bModal3");
-  let b = document.getElementsByTagName("BODY");
-  a.style.display = "block";
-  a.style.top = "0vh"
-  b[0].style.overflowY = "hidden"
-}
-function clModal3(){
-  let a = document.getElementById("bModal3");
-  let b = document.getElementsByTagName("BODY");
-  a.style.display = "none";
-  a.style.top = "120vh"
-  b[0].style.overflowY = "scroll"
-}*/

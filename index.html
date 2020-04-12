@@ -16,59 +16,55 @@
     </nav>
   </header>
   <main class="container">
-    <div class="m-w d-f fd-c">
-        <div class="d-f fd-c jc-c">
-          <h1 class="judul t-c mt-3 mb-0">YOGYAKARTA TANGGAP COVID-19</h1>
-          <p class="t-c mt-1 mb-0">Jangan panik! Mari bersama lawan COVID-19. Hubungi layanan Yogyakarta Tanggap
-            COVID-19.</p>
-          <div class="d-f jc-c">
-            <div class="informasi my-3">
-              <button class="tbl tbl-1 m-2" href>0274555585</button>
-              <button class="tbl tbl-1 m-2">08112764800</button>
-              <button class="tbl tbl-1 m-2">Lapor Jogjaprov</button>
-            </div>
-          </div>
+    <div class="content">
+      <div class="left-side">
+        <h1 class="judul t-c mt-3 mb-0">YOGYAKARTA TANGGAP COVID-19</h1>
+        <p class="t-c mt-1 mb-0">Jangan panik! Mari 
+          bersama lawan COVID-19. Hubungi layanan 
+          Yogyakarta Tanggap COVID-19.</p>
+        <div class="wrapper-card my-2">
+            <button class="tbl tbl-1 m-1" href>0274555585</button>
+            <button class="tbl tbl-1 m-1">08112764800</button>
+            <button class="tbl tbl-1 m-1">Lapor Jogjaprov</button>
         </div>
-        <div class="d-f jc-c">
-          <div class="informasi">
-            <div class="kartu">
-              <div class="d-f">
-                <div class="d-f ac-s">
-                  <img src="./asset/img/ODP.svg" alt="ODP">
-                </div>
-                <div class="d-f">
-                  <div class="ml-2 mt-1">
-                    <div class="j-s">ODP</div>
-                    <p class="a-s mt-2 mb-0" id="odpP"></p>
-                  </div>
-                </div>
+        <div class="wrapper-card my-2">
+          <div class="kartu">
+            <div class="d-f">
+              <div class="d-f ac-s">
+                <img src="./asset/img/ODP.svg" alt="ODP">
               </div>
-            </div>
-            <div class="kartu">
               <div class="d-f">
-                <div class="d-f ac-s">
-                  <img src="./asset/img/PDP.svg" alt="PDP">
-                </div>
                 <div class="ml-2 mt-1">
-                  <div class="j-s">PDP</div>
-                  <p class="a-s mt-2 mb-0" id="pdpP"></p>
-                </div>
-              </div>
-            </div>
-            <div class="kartu">
-              <div class="d-f">
-                <div class="d-f ac-s">
-                  <img src="./asset/img/+.svg" alt="Positif">
-                </div>
-                <div class="ml-2 mt-1">
-                  <div class="j-s">Positif</div>
-                  <p class="a-s mt-2 mb-0" id="positifP"></p>
+                  <div class="j-s">ODP</div>
+                  <p class="a-s mt-2 mb-0" id="odpP"></p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="kartu">
+            <div class="d-f">
+              <div class="d-f ac-s">
+                <img src="./asset/img/PDP.svg" alt="PDP">
+              </div>
+              <div class="ml-2 mt-1">
+                <div class="j-s">PDP</div>
+                <p class="a-s mt-2 mb-0" id="pdpP"></p>
+              </div>
+            </div>
+          </div>
+          <div class="kartu">
+            <div class="d-f">
+              <div class="d-f ac-s">
+                <img src="./asset/img/+.svg" alt="Positif">
+              </div>
+              <div class="ml-2 mt-1">
+                <div class="j-s">Positif</div>
+                <p class="a-s mt-2 mb-0" id="positifP"></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="d-f jc-c mt-4">
+        <div class="jc-c">
           <div class="panel-informasi">
             <div class="d-f fw-w r">
               <div class="d-f g-c  m-1">
@@ -104,62 +100,62 @@
                 </div>
               </div>
             </div>
-            <span class="border-space mt-4"></span>
-            <p class="t-c my-4">sumber data :
-              <a href="https://corona.jogjaprov.go.id" target="__blank">corona.jogjaprov.go.id</a>
-            </p>
-            <p class="t-c my-4">refrensi desain :
-              <a href="https://apple.com/covid19" target="___blank">apple</a>
-            </p>
-            <span class="border-space"></span>
-            <div class="py-4 d-f jc-c fw-w">
-              Sumber belajar :
-              <a href="https://dicoding.com" target="__blank" class="ml-1">dicoding.com</a> ;
-              <a href="https://www.w3schools.com/" target="__blank" class="ml-1">w3schools.com</a> ;
-              <a href="https://developer.mozilla.com" target="__blank" class="ml-1">developer.mozilla.com</a>.
-            </div>
-          </div>
-        </div>
-        <div class="p-2 input-data d-f fd-c" id="bAside">
-          <div class="d-f jc-e">
-            <div onclick="tAside()" class="cls">
-              <div class="wr-tbl">
-                <img class="y" src="./asset/img/i-plusb.svg" alt="close">
-              </div>
-            </div>
-          </div>
-          <div class="i-d mt-4" id="i-d-p">
-            <div class="p-2 d-f fd-c jc-c">
-              <div class="t-c t-b mb-1">tambah data pasien</div>
-              <input class="i-b" type="number" placeholder="pasien odp" name="tOdp" id="i-odp" value="">
-              <input class="i-b" type="number" placeholder="pasien pdp" name="tPdp" id="i-pdp" value="">
-              <input class="i-b" type="number" placeholder="pasien positif" name="tPositif" id="i-positif" value="">
-              <button class="tbl tbl-1 my-3" type="submit" onclick="updateD()">submit</button>
-            </div>
-          </div>
-          <div class="i-t mt-4">
-            <div class="d-f">
-              <div>
-                <img src="./asset/img/icon.svg" alt="">
-              </div>
-              <div class="d-f fd-c ml-2">
-                <div class="">Chandra Adam Pratama</div>
-                <div class=""><a href="https://github.com/penyucian" target="__blank">@penyucian</a></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-      <aside>
-        a
+      <aside class="right-side jc-c">
+        <div class="wrapper p-2">
+          <img src="asset/img/icon.svg" alt="">
+          <h4 class="t-c mb-0">Chandra AP</h4>
+          <a class="t-c" href="https://github.com/penyucian">
+            <p>@penyucian</p>
+          </a>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Mauris mattis commodo pulvinar. Suspendisse sed lobortis 
+            risus. Mauris nec risus mauris. Nullam leo lorem, 
+            scelerisque id dui sed, congue tincidunt nunc. In quis 
+            pharetra ligula, vitae porttitor ligula. Nunc eleifend 
+            magna tortor. Nam odio leo, fringilla ac laoreet ut, 
+            efficitur sit amet neque. Nunc eros ex, scelerisque 
+            dictum volutpat in, hendrerit et nunc. Morbi mollis ex 
+            id sem sodales convallis.
+          </p>
+        </div>
       </aside>
-    </main>
-    <footer class="container">
-    </footer>
-  </div>
+    </div>
+    <wrapper class="wrapper-id fd-c" id="bAside">
+      <div class="jc-e">
+        <div class="cls" onclick="tAside()">
+          <div class="wr-tbl">
+            <img class="y" src="./asset/img/i-plusb.svg" alt="close">
+          </div>
+        </div>
+      </div>
+      <div class="id-wrapper p-2 mt-4" id="i-d-p">
+          <div class="t-c t-b mb-1">tambah data pasien</div>
+          <input class="i-b" type="number" placeholder="pasien odp" name="tOdp" id="i-odp" value="">
+          <input class="i-b" type="number" placeholder="pasien pdp" name="tPdp" id="i-pdp" value="">
+          <input class="i-b" type="number" placeholder="pasien positif" name="tPositif" id="i-positif" value="">
+          <button class="tbl tbl-1 my-3" type="submit" onclick="updateD()">submit</button>
+      </div>
+    </wrapper>
+  </main>
+  <footer>
+    <span class="border-space mt-4"></span>
+    <p class="t-c my-4">sumber data :
+      <a href="https://corona.jogjaprov.go.id" target="__blank">corona.jogjaprov.go.id</a>
+      refrensi desain :
+      <a href="https://apple.com/covid19" target="___blank">apple</a>
+      <span class="border-space"></span>
+      Sumber belajar :
+      <a href="https://dicoding.com" target="__blank" class="ml-1">dicoding.com</a> ;
+      <a href="https://www.w3schools.com/" target="__blank" class="ml-1">w3schools.com</a> ;
+      <a href="https://developer.mozilla.com" target="__blank" class="ml-1">developer.mozilla.com</a>.
+  </footer>
   <div class="bmodal" id="bModal1">
     <div class="container">
-      <div class="d-f jc-c">
+      <div class="jc-c">
         <div class="m-w2 modal my-5 p-4">
           <div class="d-f ">
             <div onclick="kmodal(this)" class="cls">
@@ -466,7 +462,6 @@
       </div>
     </div>
   </div>
-
   <div class="fab" onclick="bAside()" id="tFab">
     <img class="x" src="./asset/img/i-plusb.svg" alt="i-plus">
   </div>
